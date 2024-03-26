@@ -278,7 +278,7 @@ main{
             .section1-step1-right{
                 width: 700px;
                 background-color: $color-secondary;
-                background-image: url(img/practice-1.svg);
+                background-image: url(/img/practice-1.svg);
                 border-radius: 0px 16px 16px 0px;
                 padding: 36px 120px;
                 .ex{
@@ -518,7 +518,7 @@ main{
             .section1-step3-right{
                 width: 700px;
                 background-color: $color-secondary;
-                background-image: url(img/practice-3.svg);
+                background-image: url(.../img/practice-3.svg);
                 border-radius: 0px 16px 16px 0px;
                 padding: 36px 120px;
                 .ex{
@@ -551,7 +551,7 @@ main{
                     border-radius: 0px 0px 16px 16px;
                     height: 330px;
                     width: auto;
-                    background-image: url(img/mw-practice-3.svg);
+                    background-image: url(../img/mw-practice-3.svg);
                     padding: 50px 30px;
                 }
 
