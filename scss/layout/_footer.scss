@@ -1,0 +1,26 @@
+footer{
+    width: 100%;
+    background-color: $color-text-1;
+    text-align: center;
+    padding: 12px 0;
+    .footer-text{
+        display: flex;
+        flex-direction: column;
+        color: #8a8f95;
+        font-size: 12px;
+        line-height: 2;
+        address{
+            display: flex;
+            justify-content: center;
+            font-style: normal;
+            gap: 10px;
+            a{
+                color: #8a8f95;
+                text-decoration: none;
+            }
+            .white{
+                color: $color-w;
+            }
+        }
+    }
+}
