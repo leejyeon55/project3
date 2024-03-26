@@ -1,0 +1,23 @@
+.popup {
+    position: fixed;
+    width: min(50%, 500px);
+    padding: 5% 2%;
+    font-size: 1.8rem;
+    line-height: 1.75;
+    background-color: #fff;
+    border-radius: 15px;
+    z-index: 9999;
+    top: 15%;
+    left: 60%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  }
+  .popup > span {
+    position: absolute;
+    background: $color-primary-back-1;
+    border-radius: 10px;
+    padding: 1% 2%;
+    right: 10%;
+    bottom: 10%;
+    color: #fff;
+    cursor: pointer;
+  }

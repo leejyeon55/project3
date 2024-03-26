@@ -8,6 +8,12 @@ header{
     align-items: center;
     border-bottom: 1px solid rgba(0,0,0,.2);
     background-color: $color-primary-back-2;
+    .ham-nav-fixed{
+        display: none;
+    }
+    .nav-fixed{
+        display: none;
+    }
     .burger-button{
         margin-right: 10px;
         display: none;
@@ -85,32 +91,95 @@ header{
             }
         }
     }
-    @include mq('lg'){
-        .burger-button{
-            display: none;
-        }
-    }
     @include mq('md'){
-        .burger-button{
-            display: block;
-        }
         .dep1{
             display: none;
         }
         .bar{
             display: none;
+        }
+        .gnb-2{
+            margin-right: 70px;
         }
 
     }
     @include mq('sm'){
-        .burger-button{
-            display: block;
-        }
         .dep1{
             display: none;
         }
         .bar{
             display: none;
+        }
+        .gnb-2{
+            margin-right: 70px;
+        }
+    }
+}
+header.on{
+    position: fixed;
+    z-index: 9999;
+    background-color: $color-w;
+    transition: all .5s;
+    .nav{
+        &-button {
+            background-color: $color-w;
+        }
+        &-icon {
+            &,
+            &:before,
+            &::after {
+                background-color:$color-text-1;
+            }
+        }
+    }
+    .ham-nav-fixed{
+        position: absolute;
+        display: block;
+        bottom: 17px;
+    }
+    .nav-fixed{
+        position: absolute;
+        display: block;
+        bottom: 0;
+    }
+    .gnb{
+       li a{
+        color: $color-text-1;
+        font-weight: 500;
+        &:hover{
+            color: rgb(146, 78, 255);
+            transition: all .5s;
+        }
+       }
+    }
+    .gnb-2{
+        .dep1 a{
+            color: $color-text-1;
+            &:hover{
+                color: rgb(146, 78, 255);
+                transition: all .5s;
+            }
+        }
+        .dep1-1 a{
+            color: $color-text-1;
+            &:hover{
+                color: rgb(146, 78, 255);
+                transition: all .5s;
+            }
+        }
+        .login{
+            border: solid 2px #000;
+           a{
+            color: $color-text-1;
+            &:hover{
+                color: rgb(146, 78, 255);
+                transition: all .5s;
+            }
+           }
+           &:hover{
+            border-color: rgb(146, 78, 255);
+            transition: all .5s;
+        }
         }
     }
 }

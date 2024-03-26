@@ -3,18 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BIKO</title>
+    <link rel="icon" href="./img/faviconV2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <div class="popup">해당 사이트는 학습용으로 제작되었으며 BIKO와 무관합니다. 구직용 포트폴리오로 상업적 목적이 없음을 알립니다. <span>닫기</span></div>
     <header>
-        <div class="burger-button">
-            <img src="./img/burger-white.svg" alt="btn">
-            <!-- <img src="./img/burger-black.svg" alt="btn"> -->
-        </div>
+        <nav class="nav">
+            <input type="checkbox" class="nav-checkbox" id="nav-toggle">
+            <label for="nav-toggle" class="nav-button">
+              <span class="nav-icon">&nbsp;</span>
+            </label>
+            <div class="nav-bg">&nbsp;</div>
+            <div class="nav-body">
+              <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">연습하기</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">도전하기</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">함께하기</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">보고 배우기</a></li>
+              </ul>
+            </div>
+        </nav>
         <div class="logo">
             <img src="./img/logo-white.svg" alt="logo">
-            <!-- <img src="./img/logo-purple.svg" alt="logo"> -->
+            <img class="nav-fixed" src="./img/logo-purple.svg" alt="logo">
         </div>
         <nav class="gnb">
             <ul class="dep1">
@@ -220,5 +233,7 @@
             </address>
         </div>
     </footer>
+    <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

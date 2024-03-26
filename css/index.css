@@ -14,6 +14,260 @@ body {
   font-family: "Pretendard", sans-serif;
 }
 
+.nav {
+  display: none;
+}
+
+@media screen and (min-width: 688px) and (max-width: 1200px) {
+  .nav {
+    display: block;
+  }
+  .nav-checkbox {
+    display: none;
+  }
+  .nav-button {
+    background-color: #883fff;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 2000;
+    top: 4px;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 2px;
+    text-align: center;
+  }
+  .nav-bg {
+    background-image: radial-gradient(#883fff, #37ffa9);
+    position: fixed;
+    z-index: 1000;
+    width: 55px;
+    height: 55px;
+    top: 5px;
+    right: 20px;
+    border: 2px;
+    transition: all 0.8s;
+  }
+  .nav-checkbox:checked ~ .nav-bg {
+    transform: scale(80);
+  }
+  .nav-icon {
+    position: relative;
+    margin-top: 3rem;
+  }
+  .nav-icon, .nav-icon:before, .nav-icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #fff;
+    display: inline-block;
+  }
+  .nav-icon:before, .nav-icon::after {
+    content: "";
+    position: absolute;
+    transition: all 0.2s;
+    left: 0;
+  }
+  .nav-icon:before {
+    top: -0.8rem;
+  }
+  .nav-icon::after {
+    top: 0.8rem;
+  }
+  .nav-button:hover .nav-icon:before {
+    top: -1rem;
+  }
+  .nav-button:hover .nav-icon:after {
+    top: 1rem;
+  }
+  .nav-checkbox:checked ~ .nav-button .nav-icon {
+    background-color: transparent;
+  }
+  .nav-checkbox:checked ~ .nav-button .nav-icon:before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+  .nav-checkbox:checked ~ .nav-button .nav-icon:after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+  .nav-body {
+    position: fixed;
+    top: 0;
+    left: -120%;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1500;
+    transition: all 0.8s;
+  }
+  .nav-list {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-link {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.4s;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+    background-size: 220%;
+  }
+  .nav-link:hover {
+    color: #894af1;
+    background-position: 100%;
+    transform: translateX(1rem);
+    font-weight: 700;
+  }
+  .nav-checkbox:checked ~ .nav-body {
+    opacity: 1;
+    left: 0;
+  }
+}
+@media screen and (max-width: 687px) {
+  .nav {
+    display: block;
+  }
+  .nav-checkbox {
+    display: none;
+  }
+  .nav-button {
+    background-color: #883fff;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 2000;
+    top: 4px;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 2px;
+    text-align: center;
+  }
+  .nav-bg {
+    background-image: radial-gradient(#883fff, #37ffa9);
+    position: fixed;
+    z-index: 1000;
+    width: 55px;
+    height: 55px;
+    top: 5px;
+    right: 20px;
+    border: 2px;
+    transition: all 0.8s;
+  }
+  .nav-checkbox:checked ~ .nav-bg {
+    transform: scale(80);
+  }
+  .nav-icon {
+    position: relative;
+    margin-top: 3rem;
+  }
+  .nav-icon, .nav-icon:before, .nav-icon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #fff;
+    display: inline-block;
+  }
+  .nav-icon:before, .nav-icon::after {
+    content: "";
+    position: absolute;
+    transition: all 0.2s;
+    left: 0;
+  }
+  .nav-icon:before {
+    top: -0.8rem;
+  }
+  .nav-icon::after {
+    top: 0.8rem;
+  }
+  .nav-button:hover .nav-icon:before {
+    top: -1rem;
+  }
+  .nav-button:hover .nav-icon:after {
+    top: 1rem;
+  }
+  .nav-checkbox:checked ~ .nav-button .nav-icon {
+    background-color: transparent;
+  }
+  .nav-checkbox:checked ~ .nav-button .nav-icon:before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+  .nav-checkbox:checked ~ .nav-button .nav-icon:after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+  .nav-body {
+    position: fixed;
+    top: 0;
+    left: -120%;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1500;
+    transition: all 0.8s;
+  }
+  .nav-list {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-link {
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.4s;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+    background-size: 220%;
+  }
+  .nav-link:hover {
+    color: #894af1;
+    background-position: 100%;
+    transform: translateX(1rem);
+  }
+  .nav-checkbox:checked ~ .nav-body {
+    opacity: 1;
+    left: 0;
+  }
+}
+.popup {
+  position: fixed;
+  width: min(50%, 500px);
+  padding: 5% 2%;
+  font-size: 1.8rem;
+  line-height: 1.75;
+  background-color: #fff;
+  border-radius: 15px;
+  z-index: 9999;
+  top: 15%;
+  left: 60%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.popup > span {
+  position: absolute;
+  background: #924eff;
+  border-radius: 10px;
+  padding: 1% 2%;
+  right: 10%;
+  bottom: 10%;
+  color: #fff;
+  cursor: pointer;
+}
+
 header {
   width: 100%;
   height: 70px;
@@ -24,6 +278,12 @@ header {
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   background-color: #883fff;
+}
+header .ham-nav-fixed {
+  display: none;
+}
+header .nav-fixed {
+  display: none;
 }
 header .burger-button {
   margin-right: 10px;
@@ -106,32 +366,86 @@ header .gnb-2 .login a {
   text-decoration: none;
   font-weight: bold;
 }
-@media screen and (min-width: 1201px) and (max-width: 1880px) {
-  header .burger-button {
-    display: none;
-  }
-}
 @media screen and (min-width: 688px) and (max-width: 1200px) {
-  header .burger-button {
-    display: block;
-  }
   header .dep1 {
     display: none;
   }
   header .bar {
     display: none;
+  }
+  header .gnb-2 {
+    margin-right: 70px;
   }
 }
 @media screen and (max-width: 687px) {
-  header .burger-button {
-    display: block;
-  }
   header .dep1 {
     display: none;
   }
   header .bar {
     display: none;
   }
+  header .gnb-2 {
+    margin-right: 70px;
+  }
+}
+
+header.on {
+  position: fixed;
+  z-index: 9999;
+  background-color: #fff;
+  transition: all 0.5s;
+}
+header.on .nav-button {
+  background-color: #fff;
+}
+header.on .nav-icon, header.on .nav-icon:before, header.on .nav-icon::after {
+  background-color: #000000;
+}
+header.on .ham-nav-fixed {
+  position: absolute;
+  display: block;
+  bottom: 17px;
+}
+header.on .nav-fixed {
+  position: absolute;
+  display: block;
+  bottom: 0;
+}
+header.on .gnb li a {
+  color: #000000;
+  font-weight: 500;
+}
+header.on .gnb li a:hover {
+  color: rgb(146, 78, 255);
+  transition: all 0.5s;
+}
+header.on .gnb-2 .dep1 a {
+  color: #000000;
+}
+header.on .gnb-2 .dep1 a:hover {
+  color: rgb(146, 78, 255);
+  transition: all 0.5s;
+}
+header.on .gnb-2 .dep1-1 a {
+  color: #000000;
+}
+header.on .gnb-2 .dep1-1 a:hover {
+  color: rgb(146, 78, 255);
+  transition: all 0.5s;
+}
+header.on .gnb-2 .login {
+  border: solid 2px #000;
+}
+header.on .gnb-2 .login a {
+  color: #000000;
+}
+header.on .gnb-2 .login a:hover {
+  color: rgb(146, 78, 255);
+  transition: all 0.5s;
+}
+header.on .gnb-2 .login:hover {
+  border-color: rgb(146, 78, 255);
+  transition: all 0.5s;
 }
 
 main {
