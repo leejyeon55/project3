@@ -22,7 +22,7 @@ main{
             display: flex;
             flex-direction: column;
             position: absolute;
-            top: 55%;
+            top: 80%;
             left: 50%;
             transform: translate(-50%,-50%);
             .margin-right{
@@ -35,9 +35,9 @@ main{
             }
         }
         .main-banner2{
-            display: none;
+            opacity: 0;
             position: absolute;
-            top: 58%;
+            top: 80%;
             left: 50%;
             transform: translate(-50%,-50%);
             .center{
@@ -75,9 +75,9 @@ main{
         .main-banner3{
             padding-left: 20px;
             position: absolute;
-            top: 250px;
+            top: 300px;
+            opacity: 1;
             display: flex;
-            // display: none;
             flex-direction: column;
             .th{
                 position: relative;
@@ -98,9 +98,9 @@ main{
         .main-banner4{
             padding-left: 20px;
             position: absolute;
-            top: 260px;
+            top: 320px;
             display: flex;
-            display: none;
+            opacity: 0;
             flex-direction: column;
             .one{
                 width: 80%;
@@ -213,10 +213,12 @@ main{
             margin: auto;
             box-shadow: 0px 1px 20px 0px rgba(154, 154, 154, 0.12);
             position: relative;
+            top: 100px;
             display: flex;
             justify-content: space-between;
             margin-bottom: 20px;
             .section1-step1-left{
+                width: 468px;
                 background-color: $color-w;
                 border-radius: 16px 0px 0px 16px;
                 padding: 40px;
@@ -269,10 +271,12 @@ main{
 
                 @include mq ('md'){
                     border-radius: 16px 16px 0px 0px;
+                    width: 100%;
                 }
                 @include mq ('sm'){
                     border-radius: 16px 16px 0px 0px;
                     padding: 24px;
+                    width: 330px;
                 }
             }
             .section1-step1-right{
@@ -335,10 +339,12 @@ main{
             margin: auto;
             box-shadow: 0px 1px 20px 0px rgba(154, 154, 154, 0.12);
             position: relative;
+            top: 100px;
             display: flex;
             justify-content: space-between;
             margin-bottom: 20px;
             .section1-step2-left{
+                width: 468px;
                 background-color: $color-w;
                 border-radius: 16px 0px 0px 16px;
                 padding: 40px;
@@ -390,10 +396,12 @@ main{
                 }
                 @include mq ('md'){
                     border-radius: 16px 16px 0px 0px;
+                    width: 100%;
                 }
                 @include mq ('sm'){
                     border-radius: 16px 16px 0px 0px;
                     padding: 24px;
+                    width: 330px;
                 }
 
             }
@@ -454,9 +462,11 @@ main{
             margin: auto;
             box-shadow: 0px 1px 20px 0px rgba(154, 154, 154, 0.12);
             position: relative;
+            top: 100px;
             display: flex;
             justify-content: space-between;
             .section1-step3-left{
+                width: 468px;
                 background-color: $color-w;
                 border-radius: 16px 0px 0px 16px;
                 padding: 40px;
@@ -508,10 +518,12 @@ main{
                 }
                 @include mq ('md'){
                     border-radius: 16px 16px 0px 0px;
+                    width: 100%;
                 }
                 @include mq ('sm'){
                     border-radius: 16px 16px 0px 0px;
                     padding: 24px;
+                    width: 330px;
                 }
 
             }
