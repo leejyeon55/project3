@@ -448,6 +448,10 @@ header.on .gnb-2 .login:hover {
   transition: all 0.5s;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 main {
   position: relative;
   width: 100vw;
@@ -679,6 +683,7 @@ main .section1 .section1-text .setion1-sub-text {
   }
 }
 main .section1 .section1-step1 {
+  opacity: 0;
   max-width: 1168px;
   height: 330px;
   border-radius: 16px;
@@ -819,6 +824,7 @@ main .section1 .section1-step1 .section1-step1-right .ex {
   }
 }
 main .section1 .section1-step2 {
+  opacity: 0;
   max-width: 1168px;
   height: 330px;
   border-radius: 16px;
@@ -959,6 +965,7 @@ main .section1 .section1-step2 .section1-step2-right .ex {
   }
 }
 main .section1 .section1-step3 {
+  opacity: 0;
   max-width: 1168px;
   height: 330px;
   border-radius: 16px;
